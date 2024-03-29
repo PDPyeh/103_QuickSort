@@ -45,3 +45,19 @@ void display(int arr[], int size) {
     }
     cout << endl;
 }
+
+int main() {
+    int size;
+    cout << "Masukkan ukuran array: ";
+    cin >> size;
+
+    int* arr = new int[size];
+
+    input(arr, size);
+    quickSort(arr, 0, size - 1);
+    display(arr, size);
+
+    delete[] arr;
+
+    return 0;
+}
