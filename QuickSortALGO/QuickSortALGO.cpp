@@ -10,3 +10,8 @@ void input(int arr[], int size) {
     }
 }
 
+void swap(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
